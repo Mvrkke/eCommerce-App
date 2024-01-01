@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/72f1caae52.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container">
+        <img src="assets/logo.png" alt="" class="nav__logo" />
+        <div class="nav__links">
+          <a href="" class="nav__link"> Products </a>
+          <a href="" class="nav__link">
+            <i class="fa-solid fa-cart-shopping nav__link__icon"></i>
+          </a>
+        </div>
+        <button class="nav__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <nav class="menu">
+      <button class="menu__close" onclick="closeMenu()">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="menu__links">
+        <a href="#" class="menu__link" onclick="closeMenu()">
+          Home
+        </a>
+        <a href="#" class="menu__link" onclick="closeMenu()">
+          Products
+        </a>
+        <a href="#" class="menu__link" onclick="closeMenu()">
+          Cart
+        </a>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="row header__row">
+          <h1 class="header__title">
+            Welcome to <span class="color-primary">Samurai Store</span>
+          </h1>
+          <div class="header__grid-container">
+            <figure class="header__grid">
+              <h2 class="header__grid__title">Live Comfortably</h2>
+              <img
+                src="assets/home-img-1.jpg"
+                alt=""
+                class="header__grid__img"
+              />
+            </figure>
+            <figure class="header__grid">
+              <h2 class="header__grid__title">Skin Care</h2>
+              <img
+                src="assets/home-img-2.jpg"
+                alt=""
+                class="header__grid__img"
+              />
+            </figure>
+            <figure class="header__grid">
+              <h2 class="header__grid__title">Kitchen</h2>
+              <img
+                src="assets/home-img-3.jpg"
+                alt=""
+                class="header__grid__img"
+              />
+            </figure>
+            <figure class="header__grid">
+              <h2 class="header__grid__title">Electronics</h2>
+              <img
+                src="assets/home-img-4.jpg"
+                alt=""
+                class="header__grid__img"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="products">
+        <div class="container">
+          <div class="row products__row">
+            <h2 class="products__title">Products we are proud of</h2>
+            <div class="products__list">
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="banner-1">
+        <div class="container">
+          <div class="row">
+            <div class="banner">
+              <div class="banner__text">
+                <h2 class="banner__text__title">Creative harmonious living</h2>
+                <p class="banner__text__para">
+                  RAOUF Products are all made to standard sizes so that you can
+                  mix and match them freely.
+                </p>
+                <button class="banner__text__btn">
+                  Shop now
+                </button>
+              </div>
+              <img src="assets/banner-1.jpg" alt="" class="banner__img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="trending products">
+        <div class="container">
+          <div class="row products__row">
+            <h2 class="products__title">Trending Now</h2>
+            <div class="products__list">
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+              <div class="product">
+                <img src="assets/product-img.jpg" alt="" class="product__img" />
+                <div class="product__details">
+                  <h3 class="product__details__title">Black and White Lamp</h3>
+                  <span class="product__details__price"> $986 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="banner-2">
+      <div class="container">
+        <div class="row">
+          <div class="banner banner-2">
+            <div class="banner__text">
+              <h2 class="banner__text__title">Comfortable & Elegante Living</h2>
+              <p class="banner__text__para">
+                RAOUF Products are all made to standard sizes so that you can
+                mix and match them freely.
+              </p>
+              <button class="banner__text__btn">
+                Shop now
+              </button>
+            </div>
+            <img src="assets/banner-2.jpg" alt="" class="banner__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+<section id="newsletter">
+  <div class="container">
+    <div class="row newsletter__row">
+      <h2 class="newsletter__title">
+        Newsletter
+      </h2>
+      <form action="#" class="newsletter__form">
+       <input 
+       type="email"
+      placeholder="Enter Email Address" 
+      class="newsletter__form__input"
+      /> 
+      <button class="newsletter__form__submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <div class="footer__links">
+          <a href="#" class="footer__link">About</a>
+          <a href="#" class="footer__link">Store locator</a>
+          <a href="#" class="footer__link">FAQs</a>
+          <a href="#" class="footer__link">News</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Contact us</a>
+        </div>
+        <span class="footer__credit">
+          Design by Mvrkke
+      </div>
+      </span>
+    </footer>
+  </body>
+</html>
